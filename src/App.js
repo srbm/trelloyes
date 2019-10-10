@@ -5,12 +5,13 @@ import List from './components/List';
 function App(props) {
   const lists = props.store.lists;
   const allCards = props.store.allCards
+  const cardValues = Object.values(allCards);
   console.log(allCards);
   const cardsArr = lists.map(item => {
     item.cardIds.forEach(element => {
       console.log(element + '  -element');
-      console.log(allCards + '  -all cards');
-      allCards.find(value => value.id === element ? value : null)
+      console.log(cardValues + '  -all cards');
+      cardValues.find(value => value.id === element ? value : null)
       
     });
   })
