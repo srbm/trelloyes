@@ -1,5 +1,4 @@
 import React from 'react';
-import List from './List';
 import './Card.css';
 
 function Card (props) {

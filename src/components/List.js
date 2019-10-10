@@ -3,7 +3,6 @@ import Card from './Card';
 import './List.css';
 
 function List(props) {
-  console.log(props);
   const cardIds = props.cards.map((item, i) => 
     <Card key={i} title={item.title} content={item.content} />)
   return (
