@@ -5,6 +5,7 @@ exports[`Card test suite renders Card UI as expected 1`] = `
   className="Card"
 >
   <button
+    onClick={[Function]}
     type="button"
   >
     delete
